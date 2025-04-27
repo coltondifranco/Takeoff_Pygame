@@ -26,7 +26,7 @@ This game will have a space theme. The name takeoff comes from the rocketship ch
 
 # How to Download and Play Game!
 
-## Through Application on MacOS Software:
+## Through Application on MacOS Software: (MAC ONLY INSTRUCTIONS)
 This game was built using Pygame on MacOS and I created a downloadable app for MacOS users. Therefore, a direct visual interface application can be accessed on macOS devices
 1. Download the Game
    * Download the application through this link: [DOWNLOAD HERE](https://drive.google.com/file/d/1XYVzbiBctyBcgi5mgo3z2qUt3NxfWsv6/view?usp=drive_link)
@@ -37,18 +37,18 @@ This game was built using Pygame on MacOS and I created a downloadable app for M
    * Navigate to the folder created from the zip
    * Double-click on the "VGW_Game" application to open the game
    ### IMPORTANT NOTE ABOUT MacOS SECURITY:
-   Since I am not a verified developer, macOS may block the application from opening and display a message like: ""VGW_Game” is damaged 
+   Since I am not a verified developer, MacOS may block the application from opening and display a message like: ""VGW_Game” is damaged 
    and can’t be opened. You should move it to the Trash". Do not move it to the trash. This is a standard security warning for apps from independent developers.
    #### Instead, follow these steps to safely open the app:
-   * Right-click on the game folder (most likely titled "Takeoff_Pygame")
-   * Select "New Terminal at Folder" to open the Mac terminal at the location of the game folder
-   * In the Terminal window, type the following command and press enter. "xattr -cr ."
+   * Right-click on the game folder from finder. This is most likely titled "Takeoff_Pygame", NOT the assets folder
+   * Select "New Terminal at Folder" from the bottom of that dropdown menu to open the Mac terminal at the location of the game folder
+   * In this Terminal window, type the following command and press enter "xattr -cr ." (MAKE SURE TO INCLUDE THE PERIOD IN THE QUOTES AS IT IS IMPORTANT)
      - This will bypass Mac's security restriction for that folder ONLY. This will only affect that game folders contents and will NOT affect anything outside 
      of the folder
-   * Now, the restriction is removed and you should be able to double click on the application titled "VGW_Game" to play the game
+   * Now, the restriction is removed and you should be able to double click on the application titled "VGW_Game" in the folder to play the game
 
-## Through Python in Command line on All Devices:
-This game was not made on a Windows device, so there is no direct ".exe" application for Windows devices. To run the game on Windows, Mac, and Linux, you will need to have Python and Pygame installed and run the Python script through your system's command line.
+## Through Python in Command Line on ALL DEVICES:
+This game was not made on a Windows device, so there is no direct ".exe" application for Windows devices. To run the game on Windows and Linux, you will need to have Python and Pygame installed and run the Python script through your system's command line. These steps will also work on Mac devices along with the previous Mac specific instructions.
 1. Download the Game Files
    * Navigate to my "Takeoff-Pygame" repository
    * Click the green "Code" button at the top of the page
@@ -56,7 +56,8 @@ This game was not made on a Windows device, so there is no direct ".exe" applica
    * After downloading, extract (unzip) the folder so you can access the necessary game files, including the Python script and all assets (images and audio)
 2. Installing Python
    * Go to https://www.python.org
-   * Click Downloads -> click the big yellow button corresponding to latest Python version for your corresponding device
+   * Double click Downloads
+   * Click the big yellow button corresponding to latest Python version for your corresponding device. The button will say omething like "Download Python 3.13.3"
    * Important for Windows users:
      During Python installation, check the box that says "Add Python to PATH" before clicking "Install"
 3. Install Pygame
@@ -64,20 +65,21 @@ This game was not made on a Windows device, so there is no direct ".exe" applica
      - On Windows, open "Command Prompt" or search for it in the Start Menu
      - On MacOs, open "Terminal" or search for it in the Launchpad or Spotlight
    * Install Pygame by typing:
-     - "pip install pygame" or
-     - "pip3 install pygame" if you downloaded Python 3
+     - "pip3 install pygame" if you downloaded Python 3 or
+     - "pip install pygame" if you downloaded an earlier version of Python 1
 4. Navigate to the Game Folder in the command line
    * Easy way (Recommended):
      - For MacOS users, you can easily right-click the game folder and select "New Terminal at Folder" to skip typing the path manually. This will open your terminal at the exact 
-       location of that folder
+       location of that folder. Make sure that you are right-clicking the "Takeoff_Pygame" folder and NOT the "assets" folder which is inside. Also make sure that you are searching for
+       the folder in finder or else the "New Terminal at Folder" option may not appear
      - For Windows users, you can right-click the folder and select "Open in Terminal" on newer Windows 11 versions or select "Open Command Prompt Here" on older Windows versions
    * Manual way (if you prefer typing manually in the command line):
      - Example for MacOS, type something like "cd ~/Downloads/Takeoff_Pygame-main" or whatever your specific path is to move to the game folder 
      - For Windows, it may look something like "cd C:\Users\YourUsername\Downloads\Takeoff-Pygame-main"
 5. Run the Game
    * In the command line inside the game folder, type:
-     - "python VGW_Game.py" or
-     - "python3 VGW_Game.py" if you installed Python 3
+     - "python3 VGW_Game.py" if you downloaded Python 3 or
+     - "python VGW_Game.py" if you downloaded an earlier version of Python 1
    * The game window should open automatically and play will begin
 
 
